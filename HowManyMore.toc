@@ -1,0 +1,5 @@
+## Interface: 33000
+## Title: How many more?
+## Notes: When you kills a mob, it will tell you how many more till you ding.
+HowManyMore.lua
+HowManyMore.xml
