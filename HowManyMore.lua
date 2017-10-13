@@ -4,6 +4,7 @@ function eventHandler_OnEvent(self, event, ...)
 	-- turn in a quest = You gain xxx experience.
 	arg1, argx = ...;
 	i,j = string.find(arg1, "%d+ experience.");
+	if (i == nil or j == nil) then return end
 	xp = string.sub(arg1, i, j);
 	xp = string.gsub(xp, " experience.", "");
 	xp_needed = UnitXPMax("player") - UnitXP("player");
